@@ -9,9 +9,11 @@
 <body>
     <main>
         <header>
-            <h1>Converter</h1>
+            <h1>Converters</h1>
         </header>
-        <section class="inputs">
+        <section class="inputs" id="temperaturesection">
+            <h3>Temperature</h3>
+            <br />
             <div>
                 <!-- <label for="celcius">Celsius:</label> -->
                 <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
@@ -20,6 +22,11 @@
             <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
             <!-- <label for="kelvin">Kelvin:</label> -->
             <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
+        </section>
+        <section class="inputs">
+            <input type="number" name="grams" id="grams" class="input" placeholder="Grams">
+
+            <input type="number" name="ounces" id="ounces" class="input" placeholder="Ounces">
         </section>
     </main>
     <script src="main.js"></script>

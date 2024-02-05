@@ -1,6 +1,8 @@
 const celciusInput = document.getElementById("celcius");
 const fahrenheitInput = document.getElementById("fahrenheit");
 const kelvinInput = document.getElementById("kelvin");
+const gramInput = document.getElementById("grams")
+const ounceInput = document.getElementById("ounces")
 
 const inputs = document.getElementsByClassName("input");
 
@@ -22,6 +24,12 @@ for (let i = 0; i < inputs.length; i++) {
             case "kelvin":
                 celciusInput.value = value - 273.15;
                 fahrenheitInput.value = ((value - 273.15) * 1.8) + 32;
+                break;
+            case "grams":
+                ounceInput.value = (value / 28.3495).toFixed(3);
+                break;
+            case "ounces":
+                gramInput.value = (value * 28.3495).toFixed(3);
                 break;
         }
     });
