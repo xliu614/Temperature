@@ -36,6 +36,31 @@
                     <input type="number" name="ounces" id="ounces" class="input" placeholder="Ounces">
                 </section>
             </div>
+            <div class="section">
+                <section>
+                    <div class="inputs">
+                        <label class="text-light">Original: </label>
+                        <select id="timezone_input">
+                            <option value="option0"></option>
+                            <option value="-8">Pacific</option>
+                            <option value="-7">Mountain</option>
+                            <option value="+8">Beijing</option>
+                        </select>
+                        <input type="time" />
+                    </div>
+                    <br />
+                    <div>
+                        <label class="text-light">Converted: </label>
+                        <select id="timezone_output">
+                            <option value="option0"></option>
+                            <option value="-8">Pacific</option>
+                            <option value="-7">Mountain</option>
+                            <option value="+8">Beijing</option>
+                        </select>
+                        <input type="time" readonly/>
+                    </div>
+                </section>
+            </div>
        </div>
     </main>
     <script src="main.js"></script>
